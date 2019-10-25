@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>Proser</title>
+        <link href="css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=".">Proser</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href=".">Inicio</a>
+                            </li>
+                            <li >
+                                <a href="about/">Quienes Somos</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="disabled">
+                                <a rel="next" >
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="about/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#manual-de-instalacion-de-proser">Manual de Instalación de Proser</a></li>
+            <li><a href="#requisitos-antes-de-instalar-proser">Requisitos antes de instalar Proser</a></li>
+            <li><a href="#descargar-la-iso-de-centos-7">Descargar la Iso de Centos 7.</a></li>
+            <li><a href="#instalar-virtualbox">Instalar VirtualBox:</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h1 id="manual-de-instalacion-de-proser">Manual de Instalación de Proser</h1>
+<p>Este manual va dirigido a la instalación de la aplicación Proser. Este contendrá las instrucciones necesarias para proceder a su instalación. De igual manera, se hará referencia a todos los requisitos y programas necesarios para que la aplicación pueda tener un buen ambiente de trabajo. No obstante, se incluye la preparación del server bien sea en  físico o virtual para proceder a instalar Proser.</p>
+<h2 id="requisitos-antes-de-instalar-proser">Requisitos antes de instalar Proser</h2>
+<p>Lo primero que se debe hacer es preparar el servidor de reportería. Para ello se tienen que cumplir los siguientes pasos: </p>
+<p>1) Se debe tener instalado el sistema operativo Centos 7, bien sea en un VirtualBox o en un disco físico. Una vez instalado se debe actualizar.  </p>
+<p>2) A continuación, hay que instalar Apache2.  </p>
+<p>3) Por consiguiente, se instala MariaDB versión 10.3  </p>
+<p>4) Se debe instalar PHP versión 7.2 o mayor.  </p>
+<p>5) Luego, hay que instalar Phpmyadmin 4.9.0 o mayor.  </p>
+<p>6) Instalar Node versión 10 o mayor.  </p>
+<p>7) De igual manera, se debe instalar htop (el se encarga de mostrar la información de los procesos que se  están ejecutando en Centos).  </p>
+<p>8) Luego, se tiene que instalar PM2 la última versión.  </p>
+<p>9) Instalar SOX em tu últiam versión.  </p>
+<p>10) Debemos tener acceso al repositorio de archivos de Proser. Para ello, el Administrador del repositorio nos tiene que dar acceso, mandando una invitación de github.</p>
+<h3 id="notas">Notas:</h3>
+<ul>
+<li>La instalación fue hecha con VirtualBox. De esta manera, se indica el proceso y las instalaciones en dicho programa.</li>
+<li>Las mismas instalaciones hechas en VirtualBox son equivalentes con las de un disco físico.</li>
+</ul>
+<h2 id="descargar-la-iso-de-centos-7">Descargar la Iso de Centos 7.</h2>
+<p>Debemos entrar en la página oficial de Centos: <a href="https://www.centos.org/">https://www.centos.org/</a> . Y luego se debe buscar en la sección de descargas.  </p>
+<p>En el caso de no conseguir la versión 7 que es la que necesitamos podemos entrar en la siguiente página en donde encontraremos las versiones de Centos desde la 6 hasta la 8: <a href="http://isoredirect.centos.org/">http://isoredirect.centos.org/</a>.  </p>
+<p>De igual manera, tenemos la siguiente documentación que nos brinda Centos para la descarga de dicho sistema operativo: <a href="https://docs.centos.org/en-US/centos/install-guide/downloading/">https://docs.centos.org/en-US/centos/install-guide/downloading/</a>.  </p>
+<p>Al elegir uno de los enlaces que hay de Centos versión 7, se puede observar que hay varios archivos con diferentes medios de descarga de Centos 7; como DVD ISO, Everything ISO,  Minimal ISO, entre otros. El más recomendado es el DVD ISO.  </p>
+<p>Estos son los medios básicos de Centos más destacados:  </p>
+<p><strong>1) DVD ISO:</strong> Esta imagen contiene el instalador, así como un conjunto de todos los paquetes que se pueden instalar durante una instalación interactiva. Esta es la descarga recomendada para la mayoría de los usuarios.</p>
+<p><strong>2) Everything ISO:</strong> Contiene el instalador y todos los paquetes disponibles para CentOS. Esta imagen ISO se puede usar para instalar el sistema con paquetes adicionales (usando un archivo Kickstart y especificando paquetes adicionales en la %packagessección); También se puede utilizar para configurar un espejo local para descargar paquetes. Tenga en cuenta que esta imagen es muy grande y requiere una unidad flash de al menos 16 GB u otro almacenamiento.</p>
+<p><strong>3) Minimal ISO:</strong> Contiene el instalador y un conjunto mínimo de paquetes que se pueden usar para instalar un sistema CentOS muy básico. Luego puede usar Yum para descargar paquetes adicionales de los repositorios de actualizaciones.</p>
+<p>Luego de elegir la opción de descarga de la Iso debemos esperar que finalice la descarga y tendremos la imagen Iso de Centos 7.</p>
+<h2 id="instalar-virtualbox">Instalar VirtualBox:</h2>
+<p>Primero debemos descargar el VirtualBox, para ello entraremos en la página oficial de VirtualBox en la sección de descargas:
+<a href="https://www.virtualbox.org/wiki/Downloads">https://www.virtualbox.org/wiki/Downloads</a>. Allí podremos elegir según nuestro sistema operativo el que queremos descargar.  </p>
+<p>Luego de descargarlo, debemos instalarlo. En Linux como es un paquete .deb será fácil de instalar al igual que Windows. Al terminar la instalación podremos buscar en menú el VirtualBox y al abrirlo podemos ver el ambiente de trabajo del VirtualBox.  </p>
+<!-- ![Texto alternativo](/assets/img/favicon.png) --></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"search": 83, "next": 78, "help": 191, "previous": 80};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.0.4
+Build Date UTC : 2019-10-25 14:26:28
+-->

@@ -1,0 +1,15 @@
+site_name: Proser
+
+nav:
+    - Inicio: index.md
+    - Quienes Somos: about.md
+
+theme:
+highlightjs: true
+hljs_languages:
+    - yaml
+    - rust
+
+
+
+
