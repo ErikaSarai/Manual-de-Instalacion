@@ -40,9 +40,9 @@ Debemos entrar en la página oficial de Centos: <https://www.centos.org/> . Y lu
 
 En el caso de no conseguir la versión 7 que es la que necesitamos podemos entrar en la siguiente página en donde encontraremos las versiones de Centos desde la 6 hasta la 8: <http://isoredirect.centos.org/>.  
 
-![Centos7 descargar](img/02-centos7/00.png)  
+![Centos7 descargar](img/02-centos7/00.jpg)  
 
-![Centos7 descargar](img/02-centos7/01.png)
+![Centos7 descargar](img/02-centos7/01.jpg)
 
 De igual manera, tenemos la siguiente documentación que nos brinda Centos para la descarga de dicho sistema operativo: <https://docs.centos.org/en-US/centos/install-guide/downloading/>.  
 
@@ -50,7 +50,7 @@ De igual manera, tenemos la siguiente documentación que nos brinda Centos para 
 
 Al elegir uno de los enlaces que hay de Centos versión 7, se puede observar que hay varios archivos con diferentes medios de descarga de Centos 7; como DVD ISO, Everything ISO,  Minimal ISO, entre otros. El más recomendado es el DVD ISO.  
 
-![Centos7 descargar](img/02-centos7/02.png)
+![Centos7 descargar](img/02-centos7/02.jpg)
 
 
  Estos son los medios básicos de Centos más destacados:  
@@ -70,11 +70,11 @@ Luego de elegir la opción de descarga de la Iso debemos esperar que finalice la
 Primero debemos descargar el VirtualBox, para ello entraremos en la página oficial de VirtualBox en la sección de descargas:
 <https://www.virtualbox.org/wiki/Downloads>. Allí podremos elegir según nuestro sistema operativo el que queremos descargar.  
 
-![virtualBox descargar](img/01-virtualbox/00.png)
+![virtualBox descargar](img/01-virtualbox/00.jpg)
 
 Luego de descargarlo, debemos instalarlo. En Linux como es un paquete .deb será fácil de instalar al igual que Windows. Al terminar la instalación podremos buscar en menú el VirtualBox y al abrirlo podemos ver el ambiente de trabajo del VirtualBox.  
 
-![virtualBox descargar](img/01-virtualbox/01.png)
+![virtualBox descargar](img/01-virtualbox/01.jpg)
 
 
 ## Instalación de Centos 7
@@ -101,71 +101,71 @@ En el caso de VirtualBox se debe configurar para la instalación de Centos 7 en 
 
 * Allí  aparecerá una nueva pestaña en donde hay que escribir el nombre del servidor y automáticamente colocará el tipo y versión de sistema.
 
-![centos7 instalación](img/02-centos7/03.png)
+![centos7 instalación](img/02-centos7/03.jpg)
 
 * Por consiguiente, pedirá cuanta memoria ram queremos, además de cuánto es lo recomendado (1024 MB, es decir 1 GB).  
 
-![centos7 instalación](img/02-centos7/04.png)
+![centos7 instalación](img/02-centos7/04.jpg)
 
 * Luego, se hará mención del tipo de disco duro. En el cual  hay que elegir el de **crear un disco virtual ahora**.
 
-![centos7 instalación](img/02-centos7/05.png)
+![centos7 instalación](img/02-centos7/05.jpg)
 
 * Por consiguiente, el tipo de archivo del disco duro, que sería: VDI(VirtualBox Disk Image).  
 
-![centos7 instalación](img/02-centos7/06.png)
+![centos7 instalación](img/02-centos7/06.jpg)
 
 * Después, se elige el almacenamiento en unidad de disco duro física que es la opción de **Reservado Dinámicamente**.  
 
-![centos7 instalación](img/02-centos7/07.png)
+![centos7 instalación](img/02-centos7/07.jpg)
 
 * Luego  pedirá la ubicación del archivo y su tamaño. El tamaño  puede ser de 8GB en adelante. 
 
-![centos7 instalación](img/02-centos7/08.png)  
+![centos7 instalación](img/02-centos7/08.jpg)  
 
 * Al darle click al botón de crear, aparecerá una ventana en donde se especifica la configuración del servidor virtual. Se buscará la opción de Almacenamiento y en la sección de dispositivos de almacenamiento (que aparece en el centro), se podrá ver abajo de Controlador: IDE un icono de disco que dice vacío al cual hay que darle click, y al lado derecho, en la sección de Atributos en unidad óptica habrá un disco de color azul al darle click podemos buscar la imagen Iso de Centos 7.Después de seleccionarla se le da a la opción de aceptar.  
 
-![centos7 instalación](img/02-centos7/09.png)  
+![centos7 instalación](img/02-centos7/09.jpg)  
 
 * Allí aparecerá un tipo de terminal que tiene por título CentOS 7 y a la opción de Install Centos 7 se le dará enter.  
 
-![centos7 instalación](img/02-centos7/10.png)  
+![centos7 instalación](img/02-centos7/10.jpg)  
 
 * Al cargar aparecerá la ventana de instalación de Centos 7 con las opciones de lenguaje en donde se elegirá el que convenga dependiendo de la región.  
 
-![centos7 instalación](img/02-centos7/11.png)  
+![centos7 instalación](img/02-centos7/11.jpg)  
 
 * Luego se verá el Resumen de la Instalación, en donde se puedes modificar la regionalización, el software y el sistema. Se debe dar click en Destino de la instalación, y allí se verá el tamaño de disco virtual que asignamos al sistema operativo, solo hay que dar click en la parte superior izquierda en donde dice listo.  
 
-![centos7 instalación](img/02-centos7/12.png)  
-![centos7 instalación](img/02-centos7/13.png)  
+![centos7 instalación](img/02-centos7/12.jpg)  
+![centos7 instalación](img/02-centos7/13.jpg)  
 
 * Se puede modificar la opción de red, y también la de selección de software, es decir si quieres una instalación mínima o de otro tipo. Y luego puedes dar click en empezar instalación.  
 
-![centos7 instalación](img/02-centos7/14.png)  
+![centos7 instalación](img/02-centos7/14.jpg)  
 
 * Al empezar la instalación se debe crear un usuario y una contraseña de root, para ello das click en creación de usuario y se llenan los campos con el nombre de usuario y la contraseña, para así crear el usuario. Luego se da clic en contraseña de root y se crea. Luego hay que esperar que se instale.  
 
-![centos7 instalación](img/02-centos7/15.png)  
-![centos7 instalación](img/02-centos7/16.png)  
+![centos7 instalación](img/02-centos7/15.jpg)  
+![centos7 instalación](img/02-centos7/16.jpg)  
 
 * Al finalizar la instalación te pedirá que la reinicies, así que se le da a la opción de reiniciar. Y después de reiniciar se verá la terminal con dos opciones de Centos 7, se debe elegir la primera con un enter.  
 
-![centos7 instalación](img/02-centos7/17.png)  
+![centos7 instalación](img/02-centos7/17.jpg)  
 
 * Después de dar click, se debe aprobar la licencia, para ello se da click en la opción de License Information y se aceptan los términos.
 
-![centos7 instalación](img/02-centos7/18.png)  
-![centos7 instalación](img/02-centos7/19.png)  
+![centos7 instalación](img/02-centos7/18.jpg)  
+![centos7 instalación](img/02-centos7/19.jpg)  
 
 * Luego, aparecerá el Centos 7 instalado. Se recomienda instalar la opción de Escritorio Gnome, si se instala con la opción de instalación mínima solo podrás  ver la terminal de Centos 7.  
 
-![centos7 instalación](img/02-centos7/20.png) 
+![centos7 instalación](img/02-centos7/20.jpg) 
 
 * Por último, debes actualizar Centos 7, para ello escribes en la terminal:  su (para entrar como superusuario). Después escribes: **`yum upgrade -y`**(para actualizar todos los paquetes de Centos 7).  
 
-![centos7 instalación](img/02-centos7/21.png)  
-![centos7 instalación](img/02-centos7/22.png) 
+![centos7 instalación](img/02-centos7/21.jpg)  
+![centos7 instalación](img/02-centos7/22.jpg) 
 
 ## Instalación Apache 2
 Vamos a ver cómo instalar Apache en CentOS 7, concretamente sobre un servidor recién preparado desde la versión minimal.La instalación del servidor web se realizará usando los paquetes oficiales de la distribución, a través de yum.
@@ -184,7 +184,7 @@ A continuación instalamos el paquete httpd, que es el que contiene Apache:
 sudo yum install httpd -y 
 ```  
 
-![Apache2 instalación](img/00-apache.png) 
+![Apache2 instalación](img/00-apache.jpg) 
 
 Si queremos saber qué versión exacta de Apache estamos instalando en CentOS 7 usamos el comando httpd:  
 
@@ -192,7 +192,7 @@ Si queremos saber qué versión exacta de Apache estamos instalando en CentOS 7 
 httpd -v  
 ```  
 
-![Apache2 instalación](img/01-apache.png)
+![Apache2 instalación](img/01-apache.jpg)
 
 Para comprobar que el Apache está corriendo ejecutamos el siguiente comando:  
 
@@ -235,7 +235,7 @@ Usaremos el siguiente comando para instalar MariaDB 10.3:
 yum install MariaDB-server MariaDB-client
 ```  
 
-![mariadb instalación](img/02-mariadb.png)
+![mariadb instalación](img/02-mariadb.jpg)
 
 
 Una vez que se realiza la instalación, puede iniciar y habilitar MariaDB para que se ejecute en el arranque del sistema ejecutando los siguientes comandos:  
@@ -251,7 +251,7 @@ Para establecer la contraseña raíz de MariaDB, ejecute el comando a continuaci
 mysqladmin -u root password 'new-password'
 ```  
 
-![Apache2 instalación](img/03-mariadb.png)  
+![Apache2 instalación](img/03-mariadb.jpg)  
 
 La contraseña también se puede establecer utilizando el script de seguridad MariaDB.MariaDB se entrega con un simple script de seguridad MariaDB, **mysql_secure_installation** , que básicamente le permite eliminar bases de datos de prueba y usuarios anónimos creados por defecto. Esto es muy recomendable para servidores de producción. Este script se puede ejecutar simplemente como:  
 
@@ -259,7 +259,7 @@ La contraseña también se puede establecer utilizando el script de seguridad Ma
 mysql_secure_installation
 ```  
 
-![Apache2 instalación](img/04-mariadb.png) 
+![Apache2 instalación](img/04-mariadb.jpg) 
 
  El primer aviso sería establecer la contraseña de root. sin embargo, si lo configuró anteriormente, simplemente ingrese la contraseña y continúe.
 
@@ -297,7 +297,7 @@ Ahora ejecuta el siguiente comando para verificar la versión actual de PHP acti
 
 **`php -v`**  
 
-![php instalación](img/05-php.png) 
+![php instalación](img/05-php.jpg) 
 
  
 ### Instalar módulos de PHP
@@ -369,8 +369,8 @@ Por último, se puede acceder a phpMyAdmin en un navegador utilizando la siguien
 
 **<span style="color:blue">http://localhost/phpMyAdmin/</span>**  
 
-![phpmyadmin instalación](img/06-phpmyadmin.png)  
-![phpmyadmin instalación](img/07-phpmyadmin.png) 
+![phpmyadmin instalación](img/06-phpmyadmin.jpg)  
+![phpmyadmin instalación](img/07-phpmyadmin.jpg) 
 
 
 ## Instalación de htop
@@ -400,7 +400,7 @@ Una vez que tengas instalado el paquete puedes usar el comando htop simplemente 
  
 Y verás una gráfica con las que podrás observar el estado de tu servidor.  
 
-![htop instalación](img/08-htop.png) 
+![htop instalación](img/08-htop.jpg) 
 
 
 ## Instalación de Node
@@ -411,7 +411,7 @@ Node.js es un tiempo de ejecución de JavaScript integrado en el motor V8 JavaSc
 curl -sL https://rpm.nodesource.com/setup_10.x | bash  
 ```   
 
-![node instalación](img/09-node.png) 
+![node instalación](img/09-node.jpg) 
 
 Este comando configurará el repositorio Node.js RPM por usted. Todo lo que necesita hacer a continuación es instalar el nodejs paquete, con los siguientes comandos:  
 
@@ -513,4 +513,4 @@ make install
 
 
 
-<!-- ![Texto alternativo](img/favicon.png) -->
+<!-- ![Texto alternativo](img/favicon.jpg) -->
